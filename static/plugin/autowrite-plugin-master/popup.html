@@ -1,0 +1,123 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="extra/popup.css" />
+	<script src="common/jquery.js"></script>
+	<script src="common/kissy-1.2.0-min.js"></script>
+	<script src="common/kissy-component.js"></script>
+	<script src="js/34taologin.js"></script>
+  <script src="js/popup.js"></script>
+</head>
+<body>
+    <div id="course" class="shadow clearfix">
+        <div class="content">
+            <div class="enter clearfix">
+                <a href="javascript: void(0);" class="okay"></a>
+                <a href="javascript: void(0);" class="canel"></a>
+            </div>
+            <div class="step clearfix" style="display: none;">
+                <div class="tips">
+                    <div class="focus">导航</div>
+                    <div class="detail"><div class="arrow"></div>海淘网站大全，网站支付方式、主营业务一目了然</div>
+                </div>
+                <div class="special_focus">添加海淘运单</div>
+                <a href="javascript: void(0);" id="nextStep"></a>
+                <a href="javascript: void(0);" id="quitCourse"></a>
+                <a href="http://we.walatao.com/question/134" target="_blank" class="course_detail">查看详细教程</a>
+            </div>
+        </div>
+    </div>
+    <div id="jm_pop_content"></div>
+    <div id="jm_pop_tab" class="jm_tab jm_font jm-support-container">
+        <!-- <div id="jm-logo">
+            <a class="jm-logo-img" href="http://icebear.me"></a>
+            <a class="jm-logo-title jm_hidden"></a>
+            <div class="jm_close"></div>
+        </div> -->
+        <img style="width: 1px; height: 1px;" class="analyticsuid" src="https://www.google-analytics.com/collect?v=1&t=pageview&tid=UA-76243985-1&cid=00000&dp=popup">
+        <div class="jm-logo-img-new" style="display: none">
+            <a href="http://icebear.me" target="_blank" style="display: inline-block; width: 25px; height: 25px; vertical-align: middle;">
+                <img src="http://icebear.me/Public/static/client.jobsminer.cc/godimage/popup/plugin-icon.png">
+            </a> 
+            <span>白熊求职助手</span>
+            <div class="jm_close"></div>
+        </div>
+       
+        <div id="jm-logo-login" class="jm-top-qipao" style="display: none">
+            <a class="jm-logo-img" href="http://icebear.me/?utm_source=pop-up&utm_medium=plugin&utm_campaign=logo-to-home" target="_blank"></a>
+            <a class="jm_close"></a>
+            <a class="jm-logo-setting"></a>
+            <a class="jm-logo-lock jm_switch_lock"></a>
+        </div>
+        <div class="ks-switchable-content jm-support-qipao">
+            <div id="jm_tab_intro">
+              <div class="intro_line"></div>
+              <ul id="jm_home_list">
+                <li><a href="http://icebear.me/company/companylist.html?utm_source=pop-up&utm_medium=plugin&utm_campaign=wangshen-list" target="_blank"><i class="jm_pluginicon"></i><span>名企网申</span></a></li>
+                <li><a href="http://icebear.me/resume/editresume.html?utm_source=pop-up&utm_medium=plugin&utm_campaign=my-cv"  target="_blank"><i class="jm_resumeicon"></i><span>我的简历</span></a></li>
+                <!-- <li><a href="#"><i class="jm_baikeicon"></i><span>求职百科</span></a></li> -->
+                <li><a href="http://icebear.me/company/collect?utm_source=pop-up&utm_medium=plugin&utm_campaign=my-fav"  target="_blank"><i class="jm_collecticon"></i><span>我的收藏</span></a></li>
+              </ul>
+              <div class="intro_line"></div>
+              <a class="homepage" href="http://icebear.me/?utm_source=pop-up&utm_medium=plugin&utm_campaign=link-to-home" target="_blank">访问：白熊官网</a>
+            </div>
+           <!--  <div id="jm_tab_intro">
+                <div>
+                    <div class="plugin-btn-container" style="padding-top:40px;">
+                        <a class="plugin-call" href="http://icebear.me" target="_blank"></a>
+                    </div>
+                    <div class="plugin-btn-container">
+                        <a class="plugin-support" href="http://icebear.me/Company/companylist.html" target="_blank"></a>
+                    </div>
+                    <div id="support-bottom">
+                        <a href="http://icebear.me/Install/install.html" target="_blank">使用教程</a>
+                        <a href="http://icebear.me/News/about" target="_blank">关于我们</a>
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=2535357251&site=qq&menu=yes" target="_blank">在线客服</a>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>    
+        <div id="jm-register" class="jm-register" style="display: ;">
+           <!--  <iframe src="http://icebear.me/User/checkLogin?callback=jmLogin.checkLoginCallback" width="356px" height="365px"></iframe> -->
+           <div id="jm_login_contrainer">
+            <div class="plugin_logo"><img src="http://icebear.me/Public/static/client.jobsminer.cc/godimage/ot/plugin-largelogo.png"></div>
+            <p class="plugin_tips">欢迎使用Icebear白熊求职助手</p>
+             <ul class="login_btn_gorup">
+               <li><a href="http://icebear.me/user/login?utm_source=pop-up&utm_medium=plugin&utm_campaign=login" target="_blank">登录</a></li>
+               <li><a href="http://icebear.me/user/register?utm_source=pop-up&utm_medium=plugin&utm_campaign=signup" target="_blank">注册</a></li>
+             </ul>
+           </div>
+           
+            <!-- <ul >
+                <li>
+                    <div class="jm-register-input">
+                         <input tabindex="1" type="text" class="ipt_nor" placeholder="请输入常用邮箱" value="" id="email" name="email">
+                         <input type="text" name="password" class="ipt_nor" oncut="return false" onpaste="return false" id="password" placeholder="设置密码，不低于6位" errormsg="密码为6-20位" nullmsg="请填写密码" datatype="*6-20" tabindex="2" value="">
+                    </div>
+                    <div class="jm-register-xy">
+                        <input type="checkbox" id="web_rule" name="web_rule" checked="" class="checkbox valid fl">
+                        <a class="fl">我已阅读并同意<a><a class="jm-register-tos fl" href="">《乔麦网用户协议》</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="jm-register-login">
+                        <input type="submit" id="submitLogin" class="mybtn f20" value="注 册">
+                        <a class="fl">已有账号？</a><a class="jm-login-a fl" href="">立即登录</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="" class="jm-register-jc">查看教程</a>
+                    </div>
+                </li>
+            </ul> -->
+        </div>
+        <div id="jm_popup_loading" style="position:absolute;  left: 50%; top: 50%; margin-left: -50px; margin-top: -50px;z-index:100;">
+			<img src="http://icebear.me/Public/static/client.jobsminer.cc/godimage/loading.gif">
+        </div>
+    </div>
+
+    
+</body>
+</html>

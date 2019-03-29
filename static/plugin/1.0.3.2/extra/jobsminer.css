@@ -1,0 +1,1574 @@
+/* My minified css file */
+#icebear_plugin{font-family: "Microsoft YaHei"!important;}
+#jm_pop_tab *,#jm_pop_tab *:after, #jm_pop_tab *:before{box-sizing: content-box}
+#icebear_plugin #jm_pop_tab ul li#notLogin a:hover{background: none !important;}
+.jm_hidden{display:none!important}
+.jm-clearfix{*zoom:1}
+.jm-clearfix:after,
+.jm-clearfix:before{display:table;content:""}
+.jm-clearfix:after{clear:both}:focus{outline:0}
+.jm_link{text-decoration:underline;color:#999}
+/*.icon{background:transparent url(http://js.client.walatao.com/godimage/wl_tl_500_200.png) 0 0 no-repeat;display:inline-block}ul{list-style:none;padding:0;margin:0}ul li{padding:0}#jm_popup{height:300px}#jm_pop_tab .hidden{display:none}#jm_pop_tab .jm_more{text-align:right;color:#666;margin-top:-17px}#jm_pop_tab #jm_cuxiao .jm_more{margin-right:5px}#jm_pop_tab .jm_more a{vertical-align:top;line-height:16px;text-decoration:none;color:#18b4f0}#jm_pop_tab .jm_more a i{display:inline-block;width:16px;height:16px;margin-left:2px;background:url(http://client.walatao.com/godimage/wl_tl_840_480.png) no-repeat -386px -72px}#jm_pop_tab .jm_more a:hover{color:#ff8400}#jm_pop_tab .jm_more a:hover i{background-position:-356px -97px}
+*/
+
+select {
+  font-family: "Microsoft YaHei"!important;
+
+}
+/*
+    重构pop导航页;
+
+    time: 2015-1-27;
+    author: yeliang;
+
+    css Begin
+*/
+#jm_pop_tab {font:12px/1.5 "microsoft yahei"!important; -moz-user-select:none; -webkit-user-select:none;  user-select:none;    }
+.jm-logo-companylist{
+    color: #222222 !important;
+    text-decoration:none;
+    float: right;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    border-left: 1px solid #ecc218;
+    border-right: 1px solid #ecc218;
+    margin-right: 10px;
+    font-size: 14px;
+}
+#jm_pop_tab .fl{float: left;margin-right: 5px;}
+#jm_pop_tab .fr{float: right;margin-right: 10px;}
+
+#jm_pop_tab{/*width: 360px; */width: 300px; height: 100%;margin:  0 auto;overflow-y: hidden;position: fixed;right: 0;top: 0px;z-index: 11111;}
+#jm_pop_tab.jm_pop_tab_min{width: 38px;}
+#jm-logo{background-color: #ffda44;height: 46px;position: relative;border-left: 1px solid rgba(117, 117, 125, 0.59);display: block;}
+#jm-logo .jm-logo-img{background:url(http://ice2018.com/static/chrome_plugin/images/popup/logo.png) no-repeat center;width: 122px;height: 46px;line-height: 46px;display: block;margin: 0 auto;}
+#jm-logo .jm-logo-title{text-align: center; height: 30px;line-height: 30px;display: block;}
+#jm-logo .jm_close{background:url(http://ice2018.com/static/chrome_plugin/images/popup/close.png) no-repeat;height:20px;width:20px;text-indent:-9999px;cursor:pointer;position: absolute;margin-left:30px;top: 5px;right: 5px;}
+/* 登录后log */
+#jm-logo-login{background-color: #ffda44;height: 36px;margin-left: 40px;border-left: 1px solid rgba(117, 117, 125, 0.59);}
+#jm-logo-login .jm-logo-img{background:url(http://ice2018.com/static/chrome_plugin/images/popup/logo-login.png) no-repeat center;width: 90px;height: 36px;line-height: 36px;float: left;margin-left: 12px;background-size: 100%;}
+#jm-logo-login .jm-logo-lock{background: url(http://ice2018.com/static/chrome_plugin/images/popup/unlock.png) no-repeat center;background-size: 100%;height: 36px;width: 15px;line-height: 36px;text-indent:-9999px;cursor:pointer;position: relative;margin-right: 10px;float: right;/* border-right: 1px solid #ecc218; */}
+#jm-logo-login .jm-logo-lock.jm_chk_checked{background: url(http://ice2018.com/static/chrome_plugin/images/popup/lock.png) no-repeat center;background-size: 100%;height: 36px;width: 15px;line-height: 36px;text-indent:-9999px;cursor:pointer;position: relative;margin-right: 10px;float: right;/* border-right: 1px solid #ecc218; */}
+#jm-logo-login .jm_close{background:url(http://ice2018.com/static/chrome_plugin/images/popup/close-1.png) no-repeat center;height: 36px;width: 15px;line-height: 36px;text-indent:-9999px;cursor:pointer;position: relative;margin: 0 10px;float: right}
+.jm-logo-setting{background: url(http://ice2018.com/static/chrome_plugin/images/popup/setting.png) no-repeat center;/* background-size: 100%; */height: 36px;width: 20px;line-height: 36px;text-indent:-9999px;cursor:pointer;position: relative;padding: 0 8px;float: right;border-left: 1px solid #ecc218;border-right: 1px solid #ecc218;}
+
+.jm_close:hover{}
+.jm-register-input{width: 283px; height: 100px; border: 1px solid #d5d5d5; border-radius: 4px; }
+.jm-register-xy{  height: 20px;   margin-top: 6px;}
+ .ipt_nor{border: none; height: 49px; width: 100%; font-size: 14px; text-indent: 16.3px; background-color: #fffcf0}
+#email{ /*border-bottom: 2px solid #e2e2e2;*/}
+#jm-register{  /*margin: 58px 23px 0 28px;*/ overflow: hidden;   border-left: 1px solid rgba(117, 117, 125, 0.59);  background-color: #fff;/*  border-bottom: 1px solid rgba(117, 117, 125, 0.59);*/}
+
+#submitLogin{width: 283px; height: 37px; background-color: #ffda44; border-radius: 2px; border: none;/* margin-top: 36px;*/margin-bottom: 5px;}
+.jm-register-jc{color: #ac6198; width: 84px; height: 37px; line-height: 37px; text-align: center; border: 1px solid #ac6198; margin-left: 182px; margin-top: 56px; font-size: 14px;border-radius: 2px;}
+.jm-register-login{font-size: 14px;}
+
+
+#jm_pop_tab .ks-switchable-nav{width: 36px;float: left;padding-left: 4px; list-style-type: none;background-color: #ffd733;height: 100%}
+#jm_pop_tab .ks-switchable-nav li {color:#482929 }
+#jm_pop_tab .jm-tab{  width: 36px;   /* height: 100px; */  position: relative;  margin: 10px 0;    font-size: 14px; cursor: pointer;  z-index: 1;}
+#jm_pop_tab .ks-active{z-index: 2;}
+#jm_pop_tab .tab-left{ margin: 0; padding: 0; border: 0; vertical-align: baseline; box-sizing: border-box; outline: 0;   height: 10px;   width: 36px;  position: absolute; top: -10px; right: 0; bottom: 0; z-index: 1;    pointer-events: none;              border-left: 36px solid transparent;              border-bottom: 10px solid #f3f3f3;}
+#jm_pop_tab .tab-right{  margin: 0; padding: 0; border: 0; vertical-align: baseline; box-sizing: border-box; outline: 0;   height: 10px;   width: 36px;  position: absolute;   /* top: 0; */ right: 0;  bottom: -10px;   z-index: 3;    pointer-events: none;              border-right: 36px solid #f3f3f3;              border-bottom: 10px solid transparent;}
+#jm_pop_tab .tab-right-new{  margin: 0; padding: 0; border: 0; vertical-align: baseline; box-sizing: border-box; outline: 0;   height: 10px;   width: 36px;  position: absolute;   /* top: 0; */   left: -1px;  bottom: -10px;   z-index: 2;    pointer-events: none;              border-right: 36px solid #f3f3f3;              border-bottom: 10px solid transparent;}
+#jm_pop_tab .li-text{width: 14px;padding: 2px 11px 2px;color: #222222;background: #f3f3f3;box-shadow: -1px 3px 13px rgba(74,74,74,0.4);}
+#jm_pop_tab .ks-active .tab-left{border-bottom: 10px solid #ffda44;}
+#jm_pop_tab .ks-active .tab-right{border-right: 36px solid #ffda44;}
+#jm_pop_tab .ks-active .li-text{background: #ffda44;box-shadow: -1px 3px 13px rgba(0,0,0,0.2);}
+#jm_pop_tab .ks-switchable-content{margin-left: 36px;border-left: 1px solid rgba(117, 117, 125, 0.59);height: 562px;overflow-y: auto;background: #fff;border-bottom: 1px solid rgba(117, 117, 125, 0.59);}
+#jm_pop_tab .ks-switchable-content::-webkit-scrollbar,#mt_projectremark::-webkit-scrollbar, #mt_workcontent::-webkit-scrollbar, #mt_titlecontent::-webkit-scrollbar {
+    width: 8px;
+  }
+#jm_pop_tab .ks-switchable-content::-webkit-scrollbar-thumb,#mt_projectremark::-webkit-scrollbar-thumb, #mt_workcontent::-webkit-scrollbar-thumb, #mt_titlecontent::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+  }
+
+#jm_pop_tab ul{list-style: none; padding: 0;}
+.clearfixs:before,.clearfixs:after{content:"";display:table;}
+.clearfixs:after{display:block;clear:both;}
+.clearfixs{*zoom:1;}
+/*input[type="text"]:focus{border:2px solid #d4e2e4;transition:border 0s ease-in 0s;}*/
+#jm_pop_tab .mr_created input[type="text"]:focus{border-width:1px;}
+#jm_pop_tab .mr_content input[type="text"]:focus{border:none;}
+#jm_pop_tab .mr_created input{border:none;}
+#jm_pop_tab a:hover{color:#482929;}
+#jm_pop_tab input{outline:none;}
+::-moz-focus-inner{outline:none;}
+button::-moz-focus-inner { border: 0; }
+input::-moz-focus-inner { border: 0; outline:none;}
+.mceContentBody{padding-bottom:20px;}
+
+input[type="button"],input[type="submit"]{outline:none;cursor:pointer;border:none;}
+/*.pt10{ padding-top:16px !important; vertical-align:top;}*/
+.tabuinfo td{ padding:8px 4px;}
+.tabuinfo .xl_list{width:170px;}
+/*#container{width:960px;margin:35px auto 0; padding-bottom:100px; }*/
+
+#jm_pop_tab span.error{display:block; margin:5px 0 10px 0; font-size:14px; color:#ff6a6a;text-align:left; background:url(http://www.icebear.me/Public/Home/images/error.png) 0 3px no-repeat; padding-left:20px; line-height:22px;border: none;}
+
+#jm_pop_tab .mt-title{  display: inline-block; margin-top: 16px;}
+#jm_pop_tab .metil{  margin-top: 0; background:#f9f9f9; padding: 5px 15px; border-left:3px solid #ac6198; font-size:16px; margin-left: 15px; width: 171px; float: left; position: relative;}
+#base-list .metil{margin-top: 0px;border-color: #ac6198;}
+#jm_pop_tab .mt-edit{width: 55px; float: left; background: #ac6198; margin-left: 12px; padding: 5px 7px; font-size: 14px;text-indent: 22px;position: relative;color: #fff;cursor: pointer;}
+#other-list{  /*height: 21px; padding: 4px;*/ /*line-height: 21px;*/}
+#jm_pop_tab .mt-edit i{width:15px; height:15px;background: url(http://ice2018.com/static/chrome_plugin/images/popup/edit.png) no-repeat center; position: absolute;top: 8px;left: 5px;}
+#jm_pop_tab .mt-edit-add{width: 55px; float: right; margin-right: 10px;background-color: #ac6198; margin-left: 12px; padding: 5px 7px; font-size: 14px;text-indent: 8px;position: relative;color: #fff;cursor: pointer;margin-bottom: 10px;}
+#jm_pop_tab .mt-edit-add i{width:15px; height:15px;background: url(http://ice2018.com/static/chrome_plugin/images/popup/plus.png) no-repeat center; position: absolute;top: 8px;right: 5px;}
+
+.edit-status .metil{width: 251px;}
+.edit-status .mt-edit{display: none;}
+.edit-status .infopl{display: none;}
+.infopl-edit{display: none;}
+.edit-status .infopl-edit{display: block;}
+.infopl-add{display: block;}
+.infopl{ padding: 10px 0px 10px 17px;}
+.infopl tr{padding-bottom: 10px;display: block;    border: none;}
+.infopl td{ line-height: 24px; font-size: 14px; height: 24px; /*padding: 0 3px;*/}
+.infopl td:nth-child(2n){}
+.col999{width: 75px;}
+
+.mt_base:hover{cursor: move;  cursor: -webkit-grab;  cursor: grab;}
+
+
+.infopl-edit .mt_base:hover {cursor: default;}
+.mt_base{  background: #f9f9f9; padding: 5px 12px; width: 169px;  /* padding-left: 9.6px; */}
+ /*input[type="text"]:focus {border-width: 1px; border: 1px solid #AC6198; transition: border 0s ease-in 0s; }
+*/.infopl-edit .ed_name {height: 27px;  line-height: 27px; background-color: #fffcf0; padding: 0px 10px 0px;/*border: 1px solid #F1F3E9;*/border-radius: 3px;width: 185px;}
+.mt_biryear_div{width: 80px;float: left;}
+.infopl-edit .mt_biryear{width: 64px;float: left;padding: 0;}
+.mt_birmonth_div,.mt_birday_div{width: 63px;float: left;}
+.infopl-edit .mt_birmonth,.infopl-edit .mt_birday{width: 46px;float: left;padding: 0;}
+ .qhjianli a{ display:block; text-align:center; padding:12px 0px; background:#f9f9f9; font-size:15px;}
+}
+.qhjianli .cur{ background:#eee; color:#ac6198;}
+#mt_award{}
+#mt_projectRemark,#mt_workContent,#mt_titleContent{background-color: #F9F9F9; width: 260px; height: 130px;vertical-align: top;overflow-y: auto;}
+
+/* new 20151013*/
+.mt_eduyear_div{width: 90px;float: left;}
+.infopl-edit .mt_eduyear{width: 70px;float: left;padding: 0;}
+.mt_edumonth_div{width: 90px;float: left;}
+.infopl-edit .mt_edumonth{width: 70px;float: left;padding: 0;}
+.infopledu:not(:first-child) {border-top: 2px dotted #ccc;}
+.infopl-add{display: block; /*border-top: 2px dotted #ccc;*/}
+
+
+#jm_pop_tab .mr_save,.mr_del,.mr_cancel{/* padding:10px 18px; */*padding:9px 11px;font-size:16px;vertical-align:middle;}
+#jm_pop_tab .mr_save,.mr_del{background-color:#ac6198;margin-right:5px;width: 286px;height: 34px;line-height: 34px;color:#fff;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;  margin-top: 8px;}
+.mr_cancel{display: block;color:#ac6198;background-color: #fff;    text-align: center;margin-top: 8px;margin-right: 5px;    width: 286px;    height: 34px;    line-height: 34px;                border-radius: 3px;border-width: 1px; border: 1px solid #AC6198; transition: border 0s ease-in 0s;}
+
+/* 投递管理 */
+
+.tounav{ background:#eee; height:44px; padding-left:24px;}
+.tounav a{ display:block; float:left; padding:12px 14px 0px 14px; font-size:15px; position:relative;}
+.tounav a i{ position:absolute; top:10px; right:0; width:8px; height:8px; background:url(http://www.icebear.me/Public/Home/images/myresume/reddot.png) center no-repeat;}
+.tounav .cur{ color:#ac6198;}
+.tounav em{display:block; float:left; padding:12px 8px 0px 8px; color:#aaa;}
+.tounav .shuaxin{ display:block; float:right; padding:0; margin-right:40px; margin-top:12px; width:20px; height:20px; background:url(http://www.icebear.me/Public/Home/images/myresume/shuaxin.png) center;}
+.toucet{ padding:30px;}
+
+.toucet .list{ min-height:90px;  background:#fff;}
+.toucet  table{ min-height:90px; border-left:3px solid #ac6198; padding:10px 10px 10px 20px;}
+.hdcnt{ display:none; }
+
+.my_delivery li{ margin-bottom:30px;background:#fff;position:relative;background:#f9f9f9;}
+.my_delivery .d_item{border-left:3px solid #ac6198;overflow:hidden; padding:6px 12px; }
+.tdzhankai{ position:absolute; top:56px; right:12px;}
+
+.my_delivery h2{ padding-bottom:8px; margin:0 !important;ont-weight:normal;float:left; font-size:16px;}
+.my_delivery h2 em{font-size:18px; color:#ac6198; }
+.my_delivery h2 span{font-size:16px; float:none;}
+.my_delivery h2 span.expireDay{color:#555;}
+
+.progress_status{border-top:1px dashed #cccccc;border-bottom:2px solid #D3B8CC;padding:25px 10px;position:relative;zoom:1;overflow:hidden;}
+.progress_status .offer{position:absolute;left:335px;top:120px;width:160px;height:73px;background:url(http://www.icebear.me/Public/Home/images/myresume/offer_status.png) -26px 0 no-repeat;}
+.progress_status .refused{position:absolute;left:335px;top:120px;width:186px;height:76px;background:url(http://www.icebear.me/Public/Home/images/myresume/offer_status.png) 0 -74px no-repeat;}
+.progress_status ul{margin: 0;padding: 0;list-style:none;}
+
+.btn_closeprogress{position:absolute;right:35px;bottom:30px;width:44px;height:44px;background:url(http://www.icebear.me/Public/Home/images/myresume/progress_close.png) no-repeat;}
+.status_steps li{float:left;color:#fff; text-align:center;line-height:18px; font-size:12px; position:relative;}
+.status_steps li em{ position:absolute; width:80px; text-align:center; color:#333; left:50%; margin-left:-40px; top:30px;}
+
+.status_steps .status_done{width:20px;height:20px; background:#ac6198; border-radius:100px;}
+.status_steps .status_grey{width:20px;height:20px; background:#ccc; border-radius:100px;}
+
+.status_steps .status_1{margin-left:14px;}
+.status_steps .status_line{width:22%;margin-top:8px;}
+.status_steps .status_line_done span{display:block; height:4px;background:#ac6198;}
+.status_steps .status_line_grey span{display:block; height:4px;background:#dadada;}
+.progress_status .status_text{margin-bottom:20px; margin-left:6px;}
+.status_text li{float:left;color:#333;font-size:12px;line-height:28px;margin:5px 0 0 0; width:24%; text-align:center;}
+/*.status_text .status_text_2{margin-left:80px;}
+.status_text .status_text_3{margin-left:83px;}
+.status_text .status_text_4{margin-left:82px;}
+.status_text .status_text_5{margin-left: 75px;*margin-left: 60px;}
+.status_text .status_text_6{margin-left:105px;*margin-left: 83px;}
+.status_text .status_text_7{margin-left:73px;*margin-left:57px;}
+.status_text .status_text_8{margin-left:66px;*margin-left:53px;}
+.status_text .status_text_9{margin-left:90px;*margin-left:77px;}*/
+
+.status_list li{margin:0;}
+.status_list font{ color:#aaa;}
+.status_list .list_time{font-size:12.5px;color:#999;padding-left:20px;position:relative;}
+.status_list .list_time em{position:absolute;left:0;top:5px;width:10px;height:11px;background:url(http://www.icebear.me/Public/Home/images/myresume/status_dot.png) left bottom no-repeat;}
+.status_list .top .list_time em{background-position:left top;}
+.status_list .top1 .list_time em{background-position:left top;}
+.status_list .top1 h3{ color:#ac6198}
+.status_list .top1 .list_body{border-left:none;}
+.status_list .list_body{color:#555;border-left:2px solid #d0d0d0;padding:2px 0 20px 12px;margin-left:4px;line-height:24px;}
+.status_list .top .list_body{border-left:2px solid #D3B8CC;}
+.status_list .bottom .list_body{border-left:none;}
+.status_list h3{margin:4px 0 10px;font-size:15px;color:#555555;}
+.status_list .top h3{color:#ac6198;}
+.status_list .list_body div{color:#888888;overflow:auto;}
+.status_list .list_body span{color:#333333;}
+
+
+/* 附件简历 */
+.fjlist{}
+.fjlist ul{ overflow:hidden;}
+.fjlist li{ border-top:1px solid #ddd; padding:0px 0px 20px 0px; margin-top:-2px;}
+.fjinfo .docx{ display:blockl; float:left; width:60px; height:56px;  background:url(http://www.icebear.me/Public/Home/images/myresume/doc.png) left no-repeat;}
+.fjinfo .pdf{ display:blockl; float:left; width:60px; height:56px;  background:url(http://www.icebear.me/Public/Home/images/myresume/pdf.png) left no-repeat;}
+.fjinfo span{ display:block; float:left; padding-top:8px; line-height:22px; font-size:15px;}
+.fjlist .down{ padding-top:28px;}
+.fjlist .xiazai{ display:block; float:left; padding-left:24px;  background:url(http://www.icebear.me/Public/Home/images/myresume/down.png) 0px 0px no-repeat; margin-right:30px;}
+.fjlist .shanchu{ display:block; float:left; padding-left:20px;  background:url(http://www.icebear.me/Public/Home/images/myresume/down.png) 0px -42px no-repeat;}
+.delfujie{ width:320px !important;}
+.delfujie span{ display:block; text-align:center; padding-bottom:20px;}
+.delfujie .mybtn2{ border-radius:2px;}
+
+
+
+
+
+/* 为创建在线简历 */
+.mr_uncreate .drop_r,.mr_created .drop_r{*margin-top:-147px}
+.mr_uncreate .drop_r p,.mr_created .drop_r p{*margin-top:10px;}
+.mr_created input,.mr_created textarea{font-size:14px;}
+.mr_uncreate *{list-style:none;}
+
+.mr_created .city_s .xl_list ,.mr_uncreate .city_s .xl_list{height:130px;}
+.mr_created .mr_selCity,.mr_uncreate .mr_selCity{top:0;}
+.mr_created .mr_selCity ul.mr_province ul,.mr_uncreate .mr_selCity ul.mr_province ul{width:287px;height:110px;padding:10px;}
+.mr_created #mr_mr_head *,.mr_created .mr_myresume_r *{list-style:none;}
+.mr_myresume_l{/*float:left;width:640px;margin-bottom:20px;*/}
+.mr_myresume_r{float:right;width:280px;}
+.mr_myresume_r_fix{position:fixed;margin-left:0;width:282px;top:0;}
+/*#mr_mr_head{padding-top: 25px;position: relative;}*/
+.mr_created{margin-bottom:0;}
+/*.mr_top_bg{position:relative;height: 80px; background-size:100% 100%;}
+.mr_top_bg img{position:absolute;width: 70px;height: 70px;top:16px; left:50%; margin-left: -35px; border:4px solid #fff; border-radius:100px; box-shadow:0px 2px 3px #ddd;}
+.mr_top_bg .opa{top:0px;left:0;width:100%;height:170px;}
+.mr_top_bg input{opacity:0;filter:alpha(opacity:0);cursor:pointer;border-radius:50%; left:50%; margin-left:-56px; }
+.mr_top_bg .shadow{width:120px;height:120px;top:42px;left:50%;margin-left:-60px;display:none;}
+.mr_baseinfo{position:relative; padding:30px 0 10px 0; }
+.mr_created .mr_baseinfo{border-bottom:none;border-bottom-right-radius:0px;border-bottom-left-radius:0px;}
+.mr_left_bg,.mr_right_bg{position:absolute;background: url(http://www.icebear.me/Public/Home/images/myresume/top_bg.png) no-repeat;width:12px;height:34px;top:50px;}
+.mr_left_bg{left:-1px;background-position:0 0;}
+.mr_right_bg{right:-2px;background-position:-40px 0;}
+.mr_my_qr{position:absolute;cursor:pointer;z-index:10;right:52px;top:0;width:48px;height:50px;background:#f2f2f2 url(http://www.icebear.me/Public/Home/images/myresume/qr_bg.png) 10px 10px no-repeat;}
+.mr_my_qr .dropdown_menu {width:299px;height:152px;background:url(http://www.icebear.me/Public/Home/images/qr/myresume_qr.png) no-repeat;color: #fff;display:block;padding:12px 8px 8px 5px;margin:50px 0 0 -225px;opacity: 0;visibility: hidden;-webkit-transition:.25s;transition:.25s;}
+*/
+/*.open>.dropdown_menu{margin-top:58px !important;*margin:70px 0 0 -220px !important;opacity:1;visibility:visible}
+*/.mr_w604{width:604px;margin:0 auto;}
+.mr_p_myname{height:40px;line-height:38px;margin-bottom:8px;}
+.mr_name{display:block;height:40px;width:468px;margin:0 auto;line-height:40px;font-size:30px;color:#333;text-align:center;}
+.mr_intro{display:block;color:#333;text-align:center;margin:0 auto;}
+.mr_p_introduce .mr_intro{font-size:16px;width:468px;line-height:34px;}
+.mr_p_introduce .mr_intro_grey{color:#bdbdbd;font-style: italic;}
+.mr_p_introduce .mr_edit{height:34px;}
+.mr_edit{float:right;margin-right:12px;cursor:pointer;}
+.mr_edit em{font-size:16px;color:#ac6198;}
+.mr_edit i{display:inline-block;width:12px;height:14px;background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -53px -6px no-repeat;margin-right:7px;}
+.mr_edit *{vertical-align: middle;}
+.mr_active{background-color: #fefef2;}
+
+
+
+
+
+/*已创建在线简历 jason 2014/9/8*/
+.mr_p_introduce{line-height:32px;margin-bottom:8px;min-height:34px;}
+.mr_introduce{font-size:16px;color:#333;text-align:center;}
+.mr_years,.mr_man{margin-right:12px;}
+.mr_year_se span i,.mr_year_se span em{vertical-align:middle;}
+span.mr_man,span.mr_women{width:56px;padding-left:22px;color:#b5b5b5;;height:40px;line-height:40px;border:1px solid #f1f3e9;background-color:#fff;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;cursor:pointer;}
+span.active{color:#ac6198;}
+span.mr_man i,span.mr_women i{display:inline-block;width:16px;height:16px;background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) no-repeat;}
+span.mr_man i{background-position:-4px -25px;}
+span.mr_man i.active{background-position:-4px -5px;}
+span.mr_women i{background-position:-27px -25px;}
+span.mr_women i.active{background-position:-27px -5px;}
+.mr_year_se i{margin-right:11px;}
+.sns_empty{width:227px;height:73px;margin-bottom:20px;padding:32px 0 0 310px;background:url(http://www.icebear.me/Public/Home/images/myresume/sns_add_bg.png) no-repeat;}
+.sns_empty .sns_add_empty{position:relative;width:173px;height:37px;cursor:pointer;}
+.mr_add_m {cursor:default;}
+.sns_add_empty .mr_add_m{left:-124px;top:54px;}
+.mr_add_m li{position:relative;cursor:pointer;}
+.mr_add_m li span{position:absolute;display:none;top:-21px;left:50%;height:20px;line-height:20px;line-height:18px\9;color:#fff;text-align:center;background-color:#666660;padding:0 10px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+.sns1 span{margin-left:-38px;}
+.sns2 span{margin-left:-45px;}
+.sns3 span{margin-left:-44px;}
+.sns4 span{margin-left:-43px;}
+.sns5 span{margin-left:-35px;}
+.sns6 span{margin-left:-37px;}
+.sns7 span{margin-left:-29px;}
+.sns8 span{margin-left:-40px;}
+.sns9 span{margin-left:-36px;min-width:47px;}
+.sns10 span{min-width:60px;margin-left:-45px;}
+.sns11 span{margin-left:-63px;}
+.sns12 span{margin-left:-64px;}
+.mr_add_m li em{position:absolute; top:20px;left:50px;margin-left:-7px; font-size:0px; height:0; width:0; border-width:4px 4px 0; border-style:solid dashed; border-color:#666 transparent transparent;overflow: hidden;-webkit-transition:all 0.4s ease 0s;-moz-transition:all 0.4s ease 0s;-o-transition:all 0.4s ease 0s;transition:all 0.4s ease 0s;}
+.mr_add_m .sns1 em{left:36px;}
+.mr_add_m .sns2 em{left:43px;}
+.mr_add_m .sns3 em{left:42px;}
+.mr_add_m .sns4 em{left:42px;}
+.mr_add_m .sns5 em{left:35px;}
+.mr_add_m .sns6 em{left:36px;}
+.mr_add_m .sns7 em{left:27px;}
+.mr_add_m .sns8 em{left:38px;}
+.mr_add_m .sns9 em{left:35px;}
+.mr_add_m .sns10 em{left:44px;}
+.mr_add_m .sns11 em{left:62px;}
+.mr_add_m .sns12 em{left:63px;}
+
+.sns_add_empty .mr_add_m i,.sns_add_empty .mr_add_m em{right:17px;}
+.sns_area .mr_sns_m{position:relative;width:534px;margin-bottom:16px;}
+.mr_sns_m i{position:absolute;left:-43px;top:7px;width:30px;height:30px;background:url(http://www.icebear.me/Public/Home/images/myresume/sns_bg.png) no-repeat;}
+.mr_sns_m .mr_button{width:467px;padding:0 0 0 17px;border:none;*height:44px;line-height:40px;}
+.mr_sns_m em{position:absolute;width:20px;height:20px;right:10px;top:13px;}
+.mr_sns_m .mr_ok{background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -4px -46px no-repeat;}
+.mr_sns_m .mr_no{background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -28px -46px no-repeat;}
+.mr_sns_m .sns_del{position:absolute;width:16px;height:16px;right:-30px;top:15px;background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -57px -49px no-repeat;}
+.mr_add_sns{position:relative;}
+.mr_add_sns i,.mr_add_sns em{vertical-align:middle;}
+.mr_add_sns i{display:inline-block;margin-right:10px;width:15px;height:15px;background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -5px -69px no-repeat;}
+.mr_add_sns em{color:#afafa9;}
+.mr_add_m{position:absolute;top:44px;left:0;padding:12px 0 0 20px;background-color:#fff;z-index:2;border:1px solid #e7e7e7;box-shadow:2px 2px 4px #efefe4;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.mr_add_m i,.mr_add_m em{position:absolute;background:none;top:-16px;border: 8px solid #e7e7e7;border-color: transparent transparent #e7e7e7;display: block;font-size: 0px;height: 0;width: 0;}
+.mr_add_m em{border-color: transparent transparent #fff;top:-15px;}
+.mr_add_m ul{width:276px;}
+.mr_add_m li{float:left; width:42px;height:42px;margin:0 4px 10px 0;}
+.mr_add_m li.mr0{margin-right:0;}
+
+
+.mr_add_op{padding:10px 0;margin-left:-20px;width:296px;background-color:#fafafa;}
+.mr_add_op a{vertical-align:middle;}
+.mr_add_op .mr_none_my{float:left;color:#b5b5b5;padding:6px 0;margin-left:20px;}
+.mr_add_op .sns_cancel,.mr_add_op .sns_save{float:right;padding:6px 13px;text-align:center;}
+.mr_add_op .sns_cancel{}
+.mr_add_op .sns_save{background-color:#ac6198;color:#fff;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.sns_add{cursor:pointer;}
+
+
+
+
+
+/*在线简历 模块名列表*/
+.mr_module{ background:#f9f9f9}
+.mr_module li{height:50px;line-height:50px;border-left:2px solid transparent;margin-left:-1px;border-left:2px solid #e5e5e5; list-style:none;}
+.mr_module li a{display:block;height:100%;}
+.mr_module li a{color:#333;}
+.mr_module li a *{vertical-align:middle;}
+.mr_module li i{display:inline-block;width:19px;height:18px;background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) no-repeat;margin:0 24px 0 39px;}
+.mr_module li.active i{margin-left:38px;}
+.mr_module li .mr_base_i{background-position:-24px -117px;}
+.mr_module li .mr_works_i{background-position:-24px -137px;}
+.mr_module li .mr_edu_i{background-position:-23px -156px;}
+.mr_module li.active{border-color:#ac6198;border-width:2px;}
+.mr_module li.active .mr_base_i{background-position:-5px -117px;}
+.mr_module li.active .mr_works_i{background-position:-5px -137px;}
+.mr_module li.active .mr_edu_i{background-position:-4px -156px;}
+.mr_module li.active .mr_m_name{color:#ac6198;}
+.mr_require{float:right;margin-right:16px;width:40px;height:22px;line-height:22px;line-height:22px;text-align:center;margin-top:14px;color:#fff;background-color:#ac6198;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
+.mr_module li .mr_addmd_i{background-position:-22px -177px;}
+.mr_module li.hide_md{border-color:#f2f2f2;}
+.mr_module li.hide_md a:hover{background-color:#fefefe;color:#333;}
+.mr_module li.hide_md a:hover .mr_project_i{background-position:-67px -177px;}
+.mr_module li.hide_md a:hover .mr_production_i{background-position:-67px -197px;}
+.mr_module li.hide_md a:hover .mr_self_i{background-position:-66px -219px;}
+.mr_module li.hide_md a:hover .mr_hopework_i{background-position:-63px -239px;}
+.mr_module li.hide_md a:hover .mr_skill_i{background-position:-66px -262px;}
+.mr_module li.hide_md a:hover .mr_moudle_i{background-position:-63px -283px;}
+
+.mr_module li.hide_md a{color:#b5b5b5;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.mr_module li.hide_md .mr_project_i{background-position:-43px -177px;}
+.mr_module li.hide_md .mr_production_i{background-position:-43px -197px;}
+.mr_module li.hide_md .mr_self_i{background-position:-43px -219px;}
+.mr_module li.hide_md .mr_hopework_i{background-position:-40px -239px;}
+.mr_module li.hide_md .mr_skill_i{background-position:-41px -262px;}
+.mr_module li.hide_md .mr_moudle_i{background-position:-40px -283px;}
+.mr_module li.hide_md a .mr_hide_addic{float:right;display:none;width:15px;height:15px;background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -5px -69px no-repeat;margin:17px 20px 0 0;}
+.mr_module li.hide_md a:hover .mr_hide_addic{display:inline-block;}
+
+
+.mr_module li.m_hide .mr_project_i{background-position:-67px -177px;}
+.mr_module li.m_hide .mr_production_i{background-position:-67px -198px;}
+.mr_module li.m_hide .mr_self_i{background-position:-67px -218px;}
+.mr_module li.m_hide .mr_hopework_i{background-position:-65px -240px;}
+.mr_module li.m_hide .mr_skill_i{background-position:-66px -262px;}
+.mr_module li.m_hide .mr_moudle_i{background-position:-66px -285px;}
+
+.mr_module li.active .mr_project_i{background-position:-4px -177px;}
+.mr_module li.active .mr_production_i{background-position:-5px -198px;}
+.mr_module li.active .mr_self_i{background-position:-5px -218px;}
+.mr_module li.active .mr_hopework_i{background-position:-5px -240px;}
+.mr_module li.active .mr_skill_i{background-position:-5px -262px;}
+.mr_module li.active .mr_moudle_i{background-position:-6px -285px;}
+.mr_hide{display:none;}
+.mr_hide_del{opacity:0;filter:alpha(opacity:0);float:right;width:17px;height:17px;background:url(http://www.icebear.me/Public/Home/images/myresume/my_resume_del.png) no-repeat;margin:18px 16px 0 0;}
+.mr_hide_del:hover{background:url(http://www.icebear.me/Public/Home/images/myresume/my_resume_del.png) -19px 0 no-repeat;}
+.mr_module li.m_hide.md_flag a:hover .mr_hide_del{opacity:1;filter:alpha(opacity:100);}
+/*在线简历页面主内容区域*/
+.mr_myresume_l .mr_content{padding-top:26px;background-color: #fafafa;border: 1px solid #f2f2f2;border-bottom:2px solid #f2f2f2;border-top:none;border-bottom-right-radius: 3px;border-bottom-left-radius: 3px;}
+.mr_moudle_head{margin-bottom:23px;}
+#customBlock .mr_moudle_head{margin-bottom:33px;}
+.mr_moudle_head .mr_head_l{float:left;}
+.mr_moudle_head .mr_head_r{float:right;margin-top:3px;cursor:pointer;}
+.mr_title span{vertical-align:middle;display:inline-block;}
+.mr_title .mr_title_l{width:230px;height:0;border-top:1px solid #ededed;}
+.mr_title .mr_title_c{font-size:18px;padding:6px 24px;text-align:center;background-color:#eee;-moz-border-radius:26px;-webkit-border-radius:26px;border-radius:26px;margin:0 13px;}
+.mr_title .mr_title_r{width:152px;height:0;border-top:1px solid #ededed;}
+.mr_preview .mr_title .mr_title_r{width:228px;}
+.mr_moudle_head .mr_head_r *{vertical-align:middle;}
+.mr_moudle_head .mr_head_r em{font-size:16px;color:#ac6198;}
+.mr_moudle_head .mr_head_r i{display: inline-block;width: 15px;height: 15px;background: url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -5px -69px no-repeat;margin-right:6px;}
+.mr_moudle_content{padding-bottom:21px;color:#555;font-size:14px;} /* 块  margin-bottom 48*/
+.mr_moudle_content .mr_content_l{float:left;max-width:445px;}
+.mr_moudle_content .mr_content_r{float:right;text-align:right;}
+.mr_content_l .l1{float:left;margin-right:10px;}
+.mr_content_l .l2{position:relative;float:left;padding-top:10px;max-width:380px;}
+
+#workExperience .mr_content_l .l2,#educationalBackground .mr_content_l .l2{padding-top:4px;}
+/* .mr_content_l .l2 a{position:absolute;top:16px;right:-18px;width:12px;height:12px;background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -95px -197px no-repeat;} */
+.mr_content_l .l2 a.projectTitle{/* position:relative; */font-size:16px;}
+.mr_content_l .l2 a.nourl{cursor:default;}
+.mr_content_l .l2 a.nourl:hover{color:#555;}
+.mr_content_l .l2 p{color:#999;}
+.mr_content_l .l2 a.projectTitle span{position:absolute;top:14px;right:-18px;width:12px;height:12px;background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -95px -197px no-repeat;}
+.mr_content_l .l1 img{width:46px;height:46px;border:2px solid #eee;}
+.mr_content_l .l2 h4{font-size:16px;}
+.mr_jobe_list{padding-bottom:44px;}
+.mr_content_l .l2 span{color:#999;display:block;}
+.mr_work_upload .mr_content_l {max-width:540px !important;}
+.mr_c_r_t{text-align:right;margin:5px 0 2px 0;*margin-top:8px;float:none;}
+.mr_content_r span{color:#999;}
+.mr_content_m{padding:14px 0 0 0px;*padding-left:1px;color:#555;}
+#workExperience .mr_content_m{padding-bottom:1px;}
+#workExperience .mr_content_m{padding-top:4px;}
+#workExperience .mr_moudle_content{padding-bottom:0;}
+#workExperience .list_show{padding-bottom:6px;}
+.mr_content_m ul,.custom_list ul{padding-left:18px;padding-left:15px\9;*padding-left:16px;}
+.mr_content_m ol,.custom_list ol{padding-left:19px;*padding-left:24px;}
+.mb46{margin-bottom:46px;}
+.proExpForm .mr_prolink .mr_btn{width:484px;}
+/* #educationalBackground .mr_moudle_content{padding-bottom:15px;} */
+#educationalBackground .mr_btn{width:356px;}
+#educationalBackground .mb46{margin-bottom:0;}
+#educationalBackground .mr_moudle_content{padding-bottom:5px;}
+#educationalBackground .mr_time_area .mr_btn{width:130px;}
+#projectExperience .mr_jobe_list{padding-bottom:32px;}
+#projectExperience .mr_moudle_content{padding-bottom:18px;}
+#projectExperience .mr_content_m{padding-top:8px;}
+#selfDescription .mr_moudle_content{padding-bottom:48px;}
+#expectJob .mr_moudle_content{padding-bottom:25px;}
+#projectExperience .mr_empty_add,#worksShow .mr_empty_add{margin-bottom:8px;}
+#selfDescription .mr_empty_add{margin-bottom:-20px;}
+.mr_wo_show{ margin-bottom:38px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.mr_wo_show p{line-height:26px;color:#ac1698;}
+.mr_self_site{color:#fff;margin-bottom:8px;font-size:24px;}
+.mr_wo_show .mr_c_r_t em{color:#ac1698;}
+.mr_wo_show .mr_c_r_t i{background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -53px -6px no-repeat;}
+.wh43{width:100%;}
+.mr_work_upload .l2 span{display:inline-block;}
+.mr_wu_con .mr_work_title{/* max-width: 540px; */word-break: break-all;}
+.mr_content_l .maxWidth{max-width: 940px;}
+.mr_wu_show .mr_c_r_t{padding-top:4px;}
+.mr_wu_con .l2 span{color:#333;}
+.mr_wu_show .mr_wu_con_m{color:#555;}
+
+.mr_wu_con .step_aside{margin-bottom:-23px;}
+.mr_wu_con .step_content{width:532px;}
+
+/*#worksShow{padding-bottom:56px;}*/
+.mr_self_l{position:relative;height:81px;}
+/*#selfDescription {padding-bottom: 56px;}*/
+#selfDescription .mr_head_r i,#expectJob .mr_head_r i,#skillsAssess .mr_head_r i,#customBlock .mr_head_r i{display: inline-block;width: 15px;height: 15px;background: url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -53px -6px no-repeat;margin-right: 7px;}
+/* .mr_self_l img{width:73px;height:73px;border-radius:50%;border:4px solid #f7f7f7;box-shadow:0px 2px 3px #dfdfdf;} */
+.mr_self_l img{position:absolute;top:8px;left:4px;width:73px;height:73px;}
+.mr_self_l i{position:absolute;z-index:2;width:81px;height:81px;background:url(http://www.icebear.me/Public/Home/images/myresume/mr_txs.png) no-repeat;}
+.mr_moudle_content .mr_self_l{float:left;width:100px;padding-top:5px;}
+.mr_moudle_content .mr_self_r{float:left; color:#555;line-height:26px;}
+/*#expectJob{padding-bottom:70px;}*/
+#expectJob .expectjob_list{position:relative;}
+.expectjob_list .clearfixs li{font-size:16px;}
+#expectJob .mr_job_des i{position:absolute;width:32px;height:31px;background: url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) no-repeat;}
+#expectJob .mr_moudle_content .mr_job_t{left:0;top:1px;background-position:-160px -110px;}
+#expectJob .mr_moudle_content .mr_job_b{right:0;bottom:5px;background-position:-160px -153px;}
+.mr_moudle_content .mr_job_info{text-align:center;padding-left:28px;}
+.mr_job_info{color:#555;}
+.mr_name_li{width:188px;}
+.mr_jobtype_li{width:128px;}
+.mr_city_li{width:124px;}
+.mr_jobrange_li{width:94px;}
+.mr_job_info i{display:inline-block;margin-right:10px;background:url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) no-repeat;}
+.mr_name_li i{width:9px;height:19px;background-position:-97px -220px;}
+.mr_jobtype_li i{width:17px;height:17px;background-position:-93px -247px;}
+.mr_city_li i{width:14px;height:17px;background-position:-93px -273px;}
+.mr_jobrange_li i{width:18px;height:18px;background-position:-92px -294px;}
+.mr_job_info li *{vertical-align:middle;}
+.mr_job_info li{list-style:none;float:left;text-align:left;height:24px;line-height:24px;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+
+.mr_job_info p .mr_333{color:#333;}
+.expectjob_list .mr_job_des {position:relative;margin-top:28px;padding:15px 38px 25px 47px;}
+/*
+#skillsAssess{padding-bottom:50px;}
+.mr_skill_con{padding-left:20px;margin-bottom:18px;}
+.mr_skill_con span{vertical-align:middle;display:inline-block;}
+.mr_skill_con .mr_skill_name{width:90px;height:22px;text-align:right;margin-right:13px;word-wrap:break-word;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
+.mr_skill_con .mr_skill_name:after{
+content:"...";
+}
+.mr_skill_con .mr_skill_plan{position:relative;width:420px;height:8px;border-radius:4px;background-color:#eee;margin-right:21px;overflow:hidden;}
+.mr_skill_plan em{position:absolute;left:0;top:0;display:inline-block;height:8px;width:370px;background-color:#ac6198;border-radius:4px;overflow:hidden;} */
+#skillsAssess{padding-bottom:12px;}
+.mr_skill_con{;margin-bottom:18px;position:relative;}
+.mr_skill_con span{vertical-align:middle;display:inline-block;}
+.mr_skill_con .mr_skill_name{width:90%;height:24px;text-align:left;}
+/* .mr_skill_con .mr_skill_name:after{
+content:"...";
+} */
+.mr_skill_con .mr_skill_plan{position:relative;width:86%;height:8px;border-radius:4px;background-color:#eee;margin-right:10px;overflow:hidden;}
+.mr_skill_plan em{position:absolute;left:0;top:0;display:inline-block;height:8px;background-color:#ac6198;border-radius:4px;overflow:hidden;}
+/**
+ * @author pooky
+ * display:none -> display:inline-block;
+ */
+.mr_skill_con .mr_skill_delete{display:none; width:13px;height:13px;background:url(http://www.icebear.me/Public/Home/images/myresume/skill_delete.png) center top no-repeat;cursor:pointer;}
+/**
+ * author pooky
+ * display:none -> display:block;
+ */
+.mr_moudle_content .mr_skill_add{display:none; padding-left:125px;*padding-left:104px;color:#999999;font-size:16px;}
+.mr_skill_add_button span{display:inline-block;width:88px;text-indent:22px;background:url(http://www.icebear.me/Public/Home/images/myresume/skill_add.png) left 3px no-repeat;cursor:pointer;}
+#customBlock{padding-bottom:30px;}
+.mr_skill_add span.error{margin-top:0;}
+/**
+ * @author pooky
+ * display:none -> display:inline-block;
+ */
+.mr_skill_con .mr_skill_circle{display:none;cursor:pointer;width:20px;height:19px;position:absolute;left:122px;top:3px;background:url(http://www.icebear.me/Public/Home/images/myresume/skill_circle.png) no-repeat center top;}
+.mr_skill_circle em{display:inline-block; cursor:pointer;width:29px;height:23px;line-height:17px;position:absolute;right: -4px;top: -22px;text-align: center;padding: 0px;color: #ffffff;background:url(http://www.icebear.me/Public/Home/images/myresume/skill_img.png) center top no-repeat;font-size:11px;}
+
+
+#customBlock{padding-bottom:30px;}
+
+
+
+
+
+/*添加框*/
+.xw_input_div{position: relative;cursor: pointer;width: 170px;height: 40px;border: 1px solid #f1f3e9;background-color: #fff;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;margin-bottom: 9px;}
+.xw_input_div .mr_btn{border:none;text-align: left;padding:0 10px;width: 150px;height: 40px;line-height:24px;*height:44px;*line-height:40px;background-color: #fff;}
+
+.mr_input_div{position: relative;cursor: pointer;width: 390px;height: 46px;border: 1px solid #f1f3e9;background-color: #fff;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;margin-bottom: 9px;}
+.mr_add_work label{display: block;color: #afafa9;padding-bottom: 4px;padding-left: 3px;}
+.mr_input_div .mr_btn{border:none;text-align: left;padding:0 17px;width: 356px;height: 46px;line-height:24px;*height:44px;*line-height:40px;background-color: #fff;}
+.mr_timed_div{position:relative;/*width:190px;*/height: 46px;cursor:pointer;border: 1px solid #f1f3e9;background-color: #fff;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.mr_timed_div .xl_list{width:190px;}
+.mr_sta_time{margin-right:8px;}
+.mr_timed_div .mr_btn{border:none;text-align: left;padding-left: 17px;width: 130px;height: 45px;background-color: #fff;}
+.mr_time_area{margin-bottom:9px;}
+#mr_job_mce .tinymce{width:520px;height:148px;}
+/* #mr_job_mce table.mceLayout,#mr_job_mce table.mceLayout tr.mceFirst td,#mr_job_mce table.mceLayout tr.mceLast td,#mr_job_mce .mceIframeContainer{border:none;}
+#mr_job_mce td.mceToolbar{background-color:#fff;}
+#mr_job_mce table.mceLayout{border:1px solid #f1f3e9;} */
+.mr_upload_logo{position:absolute;right:88px;top:74px;width:120px;height:120px;border:1px solid #f1f3e9;background-color:#fff;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.mr_upload_logo img{position:absolute;z-index:1;width:0px;height:0px;}
+.mr_upload_logo div{position:absolute;text-align:center;z-index:2;width:120px;height:52px;padding-top:68px;}
+.mr_upload_logo div span{color:#999;}
+.mr_upload_logo div i{position:absolute;left:50px;top:37px;width:21px;height:18px;background:url(http://www.icebear.me/Public/Home/images/myresume/upload_logo_shadow.png) -1px 0 no-repeat;}
+.mr_upload_logo div.active i{background-position:-24px 0;}
+.mr_upload_logo div.up i{background-position:-47px 0;}
+.mr_upload_logo div.active span{color:#ac6198;}
+.mr_upload_logo div.up span{color:#fff;}
+.mr_upload_logo div.up{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#4C000000', endColorstr='#4C000000');background:rgba(0,0,0,0.3);}
+
+.mr_upload_logo input{position:absolute;z-index:3;cursor:pointer;width:120px;height:120px;filter: alpha(Opacity=0);opacity: 0;}
+.mr_ope .mr_delete{position:relative;cursor:pointer;float:right;font-size:16px;color:#ff685e;margin-top:13px;z-index:10;}
+.mr_delete_pop{position:absolute;width:146px;height:80px;right:-56px;top:-128px;font-size:16px;border:1px solid #e7e7e7;background-color:#fff;padding:18px 24px;box-shadow:2px 2px 4px #efefe4;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.mr_delete_pop div{margin-right:-24px;}
+.mr_delete_pop p{margin-bottom:20px;color:#333;}
+.mr_delete_pop span{display:inline-block;padding:7px 16px;}
+.mr_delete_pop .mr_del_ok{background-color:#ac6198;color:#fff;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.mr_delete_pop .mr_del_cancel{background-color:#fff;color:#333;}
+
+.mr_calendar_ym{position:absolute;top:49px;left:-1px;height:160px;width:244px;background-color:#fff;z-index:5000;border:1px solid #e7e7e7;border-radius:3px;box-shadow: 2px 2px 4px #e7e7e7;}
+.mr_calendar_ym *{list-style:none;}
+.mr_calendar_ym ul{float:left;}
+.mr_calendar_ym .mr_year{width:90px;height:160px;overflow:auto;}
+.mr_calendar_ym .mr_year li{width:72px;height:32px;cursor:pointer;line-height:32px;background-color:#fff;color:#333;text-align:center;}
+.mr_calendar_ym .mr_year li:hover{background-color:#f4f4f4 !important;color:#333 !important;}
+.mr_calendar_ym .mr_year li.active{background-color:#D3B8CC !important;color:#fff !important;}
+
+/* .mr_calendar_ym .mr_year li.today{background: #4ed6b7;color:#fff;} */
+/* .mr_calendar_ym .mr_year li.today:hover{background: #4ed6b7;color:#fff;} */
+.mr_calendar_ym .mr_year li.disable{color:silver;cursor:normal;}
+.mr_calendar_ym .mr_year li.disable:hover{color:silver !important;cursor:normal !important;background-color:#fff !important;}
+
+.mr_calendar_ym .mr_month{word-wrap:normal;padding:20px 0px 15px 15px;background-color:#fff;width:136px;}
+.mr_calendar_ym .mr_month li{float:left;cursor:pointer;width:33%;height:22px;line-height:22px;color:#333;background-color:#fff;margin:0 0 10px 0;}
+.mr_calendar_ym .mr_month span{padding:0 6px;border-radius:3px;}
+.mr_calendar_ym .mr_month span.active{background-color:#D3B8CC !important;color:#fff !important;}
+.mr_calendar_ym .mr_month span:hover{background-color:#f4f4f4;color:#333;}
+/* .mr_calendar_ym .mr_month span.today {background-color:#ddd;} */
+/* .mr_calendar_ym .mr_month span.today:hover {background-color:#ac6198;color:#fff;} */
+.mr_calendar_ym .mr_month span.disable {color:silver;cursor:normal;}
+.mr_calendar_ym .mr_month span.disable:hover {color:silver !important;cursor:normal !important;background-color:#fff !important;}
+
+.mr_month .mr0{margin-right:0;}
+.mr_month .mb0{margin-bottom:0;}
+
+.mr_empty_add,.mt-edit-add.mr_empty_add{  display: block; cursor: pointer; margin: 15px; text-align: center; width: 285px; height: 100px; line-height: 98px; border: 1px dashed #d7d7d7; background-color: #fcfcfc;  position: relative;  padding: 0;  color: #aaa;  text-indent: 0;}
+.mr_empty_add i,.mt-edit-add.mr_empty_add i{ position: absolute; top: 42px; left: 80px; width: 15px; height: 15px; background: url(http://www.icebear.me/Public/Home/images/myresume/icons_mr.png) -5px -69px no-repeat; margin-right: 6px; /* vertical-align: middle; */ float: left;}
+
+
+.quick-write{width: 126px;height: 31.6px;background-color: #ac6198;position: relative;margin: 0 auto;margin-top: 10px;line-height: 31.6px;font-size: 16px;color: #fff;/*font-weight: bold;*/cursor: pointer;text-indent: 42px;}
+.quick-write a:hover{color: #482929}
+.quick-write i{  width: 17px; height: 22px; background: url(http://ice2018.com/static/chrome_plugin/images/popup/quick-write.png) no-repeat center; position: absolute;   top: 5px;  left: 15px;}
+
+/* 反馈 */
+#product-fk{width:50px;height:50px;position:fixed;bottom:80px;margin-left:1000px;cursor:pointer;z-index:21}
+#feedback-icon{position:relative}
+#feedback-icon span{font-size:12px;color:#555}
+#feedback-icon .fb-icon{width:30px;height:30px;margin:0 auto;background:url(http://www.icebear.me/Public/Home/images/feedback.png) no-repeat}
+#feedback-icon .fb-icon:hover{background-position:0 -31px}
+#feedback-con{width: 322px;/* position:fixed; */bottom:80px;/* background-color:#53535A; *//* border:1px solid #333; */border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;-ms-border-radius:3px;/* box-shadow:2px 4px 7px #ecebeb; *//* -webkit-box-shadow:2px 4px 7px #ecebeb; */-moz-box-shadow:2px 4px 7px #ecebeb;-o-box-shadow:2px 4px 7px #ecebeb;-ms-box-shadow:2px 4px 7px #ecebeb;/* margin-left:680px; *//* display:none; */z-index:21}
+#feedback-con .pfb-pho{position:absolute;width:83px;height:82px;top:-44px;left:50%;margin-left:-40px;background:url(http://www.icebear.me/Public/Home/images/feedback.png) 0 -62px no-repeat}
+#feedback-con .pfb-close{width:14px;height:14px;position:absolute;right:12px;top:10px;cursor:pointer;background:url(http://www.icebear.me/Public/Home/images/close_notice.gif) no-repeat}
+#feedback-con .error{width: 190px;height:30px;text-align:center;line-height:30px;position:absolute;top:135px;left:150px;background-color:#555;color:#fafafa;font-style: normal;font-size: 14px;border: none;}
+#feedback-con .error i{width:0;height:0;overflow:hidden;border:5px solid #555;border-color:#555 #555 transparent transparent;position:absolute;top:30px;left:120px}
+#feedback-con .error i.txt{border:5px solid #555;border-color:transparent transparent #555 #555;position:absolute;top:-10px;left:20px}
+#feedback-icon .error,#feedback-icon .fk-suc{text-align:center;color:#fff;position:absolute;height:30px;line-height:30px;top:-45px;background-color:#555}
+#feedback-icon .error{width:350px;left:-275px}
+#feedback-icon .fk-suc{width:110px;left:-35px}
+#feedback-icon .error i{width:0;height:0;overflow:hidden;border:5px solid #555;border-color:#555 #555 transparent transparent;position:absolute;top:30px;left:280px}
+#product-fb{margin:44px 13px 0}
+#product-fb textarea{width: 272px;height:114px;margin:0;padding:5px 11px;border:1px solid #f1f3e9; background:#FFFCF0;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;-ms-border-radius:3px;font:14px/22px Arial,"Hiragino Sans GB","微软雅黑","宋体";overflow:hidden}
+#product-fb .pfb-email{margin-top:10px;margin-left:0;padding:0}
+#product-fb input{float:left;width: 200px;height:37px;margin:0;padding: 0 11px;border:1px solid #f1f3e9;background:#FFFCF0;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;-ms-border-radius:3px;font: 12px/32px Arial,"Hiragino Sans GB","微软雅黑","宋体";}
+#product-fb .ensure{width: 66px;height:39px;text-align:center;line-height:37px;float: right;background-color:#FADC62;color:#333;font-size:16px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;-ms-border-radius:3px;cursor:pointer;margin:0}
+#product-fb .ensure:hover{background:#F9D239}
+.pro-opa{opacity:0}
+
+/*#backtop{display:none;background:url(http://www.icebear.me/Public/Home/images/backtop.png) left top no-repeat;width:28px;height:64px;position:fixed;bottom:140px;margin-left:1010px; cursor:pointer;}
+#backtop:hover{background-position:right top !important;}*/
+.dn {display: none; }
+.setting-quick-write{  font-size: 16px; color: #ac6198; margin: 20px; text-align: center;}
+.setting-quick-write a{color: #ac6198; text-decoration: underline;}
+.setting-logout{  position: absolute;   top: 25px; right: 15px;  color: #ac6198;    text-decoration: underline;  font-size: 14px;  cursor: pointer;}
+.feedback-ret{  margin: 60px auto; text-align: center;}
+
+#jm-mousemove{width: 100px;  position: absolute; z-index: 11143; display: block;cursor: move;   cursor: -webkit-grabbing;  cursor: grabbing;}
+#jm-mousemove:hover { cursor: -webkit-grabbing;  cursor: grabbing;}
+.jm-mask{width: 100%;height: 100%;  top: 0px; left: 0px; position: absolute; opacity: 0.15; z-index: 99; background-color: rgb(0, 0, 0);}
+
+#setting-bottom {position: absolute;  bottom: 2px;  display: block;}
+#setting-bottom img {width: 100%;  display: block;}
+.mt_base pre{word-break: break-all;  word-wrap: break-word; width: 260px;}
+
+/* New Version*/
+#jm_pop_tab pre {border:none;}
+.plugin_login{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 100%;
+  background-color: #482929;
+}
+.plugin_login ul,.plugin_login ul li{
+  margin:0;
+  padding: 0;
+  height: 86px;
+  width: 38px;
+  display: block;
+  background-color: #ffd733;
+}
+.plugin_login ul{
+  position: absolute;
+  top: 50%;
+  margin-top: -43px
+}
+.plugin_login ul li a{
+  height: 86px;
+  width: 38px;
+  color: #482929;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+.plugin_login ul li .span {
+  padding-top: 45px;
+}
+.plugin_quickwrite {
+  position: fixed;
+  top: 0;
+  right: 0;
+  float: left;
+  width: 38px;
+  height: 100%;
+  background-color: #ffd733;
+}
+#icebear_plugin .open{
+  float: left;
+  position: relative !important;
+}
+.plugin_quickwrite a{
+  text-decoration: none;
+}
+.plugin_quickwrite ul.qw-nav{
+  width: 38px;
+  position: absolute;
+  top: 50%;
+  margin-top: -210px;
+  border-bottom: 1px solid #fceb9e;
+}
+.plugin_quickwrite ul.qw-nav li {
+    list-style-type: none !important;
+}
+.plugin_quickwrite ul li a{
+  height: 59px;
+  width: 38px;
+  color: #482929;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-top: 1px solid #fceb9e;
+  position: relative;
+}
+.plugin_quickwrite ul li a.qw-openqz {
+  background:url(http://ice2018.com/static/chrome_plugin/images/qw-openqz.png) no-repeat;
+  background-position: 8px 10px;
+}
+.plugin_quickwrite ul li a.qw-edit {
+  background:url(http://ice2018.com/static/chrome_plugin/images/qw-edit.png) no-repeat;
+  background-position: 7px 10px;
+}
+.plugin_quickwrite ul li a.qw-refresh {
+  background:url(http://ice2018.com/static/chrome_plugin/images/qw-refresh.png) no-repeat;
+  background-position: 7px 10px;
+}
+.plugin_quickwrite .quick-write {
+    text-decoration: none;
+  background-color: #ffd733;
+  background:url(http://ice2018.com/static/chrome_plugin/images/qw-quickwrite.png) no-repeat;
+  background-position: 8px 8px;
+}
+.plugin_quickwrite .quick-write p{
+     font-family: "Microsoft YaHei"!important;
+    color: #482929;
+    width: 25px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 6px;
+    line-height: 30px;
+    text-align: center;
+}
+.plugin_quickwrite ul li a.qw-btn {
+  height: 160px;
+  /*padding: 0 10px;*/
+}
+.plugin_quickwrite ul li a.qw-btn span{
+  font-size: 18px;
+/*  word-wrap: break-word;
+  letter-spacing: 20px;*/
+}
+
+.plugin_quickwrite ul li.notLogin a{
+  height: 314px;
+}
+.plugin_quickwrite ul.bottom-btn{
+  position: absolute;
+  bottom: 0;
+}
+.plugin_quickwrite ul.bottom-btn li{
+    list-style-type: none !important;
+}
+#notLogin .message_list i.message {
+  height: 26px;
+  width: 26px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 7px;
+ background:url(http://ice2018.com/static/chrome_plugin/images/plugin-icon.png) no-repeat center;
+}
+.plugin_quickwrite ul li .span {
+  padding-top: 45px;
+}
+.plugin_quickwrite #nav-close {
+  width: 38px;
+  display: block;
+  cursor: pointer;
+  height: 35px;
+  background:url(http://ice2018.com/static/chrome_plugin/images/qw-close.png) no-repeat center;
+}
+#jm_pop_tab #nav-logo {
+  top: 50px;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  cursor: pointer;
+  /*background-color: #ffd733;*/
+  background:url(http://ice2018.com/static/chrome_plugin/images/qw-nav-logo.png) no-repeat center;
+}
+
+/*Hover effect*/
+.plugin_quickwrite ul.qw-nav li ,
+.plugin_quickwrite ul.bottom-btn li{
+  position: relative;
+    padding: 0;
+    margin: 0;
+}
+.plugin_quickwrite ul.qw-nav li a span,
+.plugin_quickwrite ul.bottom-btn li a span{
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    /*padding: 10px;*/
+    left:-140px;
+    top:50%;
+    margin-top:-23px;
+    font-size: 14px;
+    color: #ffd733;
+    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);*/
+    text-align: center;
+    background: #482929;
+    text-indent: 0px;
+    position: absolute;
+    pointer-events: none;
+    bottom: 100px;
+    opacity: 0;
+    /*box-shadow: 1px 1px 2px rgba(0,0,0,0.1);*/
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.plugin_quickwrite ul.qw-nav li a span:before,
+.plugin_quickwrite ul.qw-nav li a span:after,
+.plugin_quickwrite ul.bottom-btn li a span:before,
+.plugin_quickwrite ul.bottom-btn li a span:after{
+    z-index: 10;
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    right: -6px;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border-top:6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #482929;;
+
+}
+.plugin_quickwrite ul.bottom-btn li a.qw-jstips-img{
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/plugin-light.png) no-repeat center;
+  background-position: 7px 8px;
+}
+.plugin_quickwrite ul.bottom-btn li a.qw-jstips-newimg{
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/plugin-light-new.png) no-repeat center;
+  background-position: 7px 0;
+}
+.plugin_quickwrite ul.bottom-btn li a.qw-feedback {
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/plugin-fb.png) no-repeat center;
+  background-position: 8px 8px;
+}
+.plugin_quickwrite ul.bottom-btn li a.qw-share {
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/plugin-share.png) no-repeat center;
+  background-position: 7px 10px;
+}
+.plugin_quickwrite ul.bottom-btn li .sharetowx{
+  display: none;
+  width: 238px;
+  height: 309px;
+  position: absolute;
+  bottom: 15px;
+  left: -260px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/sharewx.png) no-repeat center;
+  background-size: 238px 309px;
+}
+.plugin_quickwrite ul.qw-nav li a:hover span,
+.plugin_quickwrite ul.bottom-btn li a:hover span{
+    opacity: 0.9;
+    left: -130px;
+}
+#jm_pop_tab{
+  overflow-x: hidden;
+}
+#icebear_plugin .hover_cover {
+  width: 300px !important;
+}
+
+#jm-content{
+  float: right;
+  width: 262px;
+  height: 100%;
+  background-color: #482929;
+}
+.jm_pop_tab_min #jm-content{
+  visibility: hidden;
+}
+#openqs-list{
+    /*position: relative;*/
+    height: 100%;
+        overflow-y: auto;
+    overflow-x: hidden;
+}
+#openqs-list .infopl-add{min-height: 520px !important;}
+#openqs-list .infopl-edit{min-height: 520px}
+#openqs-list::-webkit-scrollbar,#mt_projectremark::-webkit-scrollbar, #mt_workcontent::-webkit-scrollbar, #mt_titlecontent::-webkit-scrollbar {
+  width: 8px;
+}
+#openqs-list::-webkit-scrollbar-thumb,#mt_projectremark::-webkit-scrollbar-thumb, #mt_workcontent::-webkit-scrollbar-thumb, #mt_titlecontent::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
+}
+
+#openqs-list .ot-empty{
+   width: 156px;
+    padding: 20px 35px;
+    color: #f6ebd6;
+    line-height: 25px;
+}
+#openqs-list .jm_mt_edit_add {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+}
+#openqs-list .mt-edit-add{
+  position: fixed;
+  bottom: 0;
+  height: 20px;
+  width: 262px;
+  padding: 10px 0;
+  margin: 0;
+  color: #482929;
+  background: #f6ebd6;
+  text-align: center;
+}
+#openqs-list .add_grey .mt-edit-add{
+  color: #c6b7a9;
+}
+#jm-content #openqs-list .add_grey i{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 12px;
+  left: 93px;
+  z-index: 2;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-add-gery.png) no-repeat center;
+}
+#openqs-list .jm_mt_edit_add i {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 12px;
+  left: 93px;
+  z-index: 2;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-add.png) no-repeat center;
+}
+#openqs-list h2{
+  padding: 20px 0 0 15px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+}
+#openqs-list .infopl{
+  color: #fff;
+}
+.oqs-tool {height: 30px; position: relative;}
+.oqs-back {
+  width: 18px;
+  height: 18px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-back.png) no-repeat center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+.oqs-list {
+  width: 18px;
+  height: 18px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-list.png) no-repeat center;
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  cursor: pointer;
+}
+.oqs-grid {
+   width: 18px;
+  height: 18px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-grid.png) no-repeat center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.oqs-tool .oqs_hover_listicon{
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-list-gery.png) no-repeat center;
+}
+.oqs-tool .oqs_hover_gridicon{
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-grid-gery.png) no-repeat center;
+}
+.oqs-list-gery {
+  width: 18px;
+  height: 18px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-list-gery.png) no-repeat center;
+  position: absolute;
+  top: 10px;
+  right: 35px;
+}
+.oqs-grid-gery {
+   width: 18px;
+  height: 18px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-grid-gery.png) no-repeat center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.infopl-edit .ot_input,#openqs-list .infopl-edit .ed_name {
+  height: 36px;
+  line-height: 36px;
+  width: 210px;
+  background-color: #fcf8f0;
+  border: 1px solid  #e3d2c4;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 0;
+}
+#openqs-list .infopl-edit table #mt_titleContent{
+  background-color: #fcf8f0;
+  width: 210px;
+  height: 274px;
+  line-height: 22px;
+  color: #482929;
+  vertical-align: top;
+  overflow-y: auto;
+  padding: 10px;
+
+}
+#openqs-list .ot_button{text-align: right; padding: 0px 13px;}
+#openqs-list .ot_button .mr_save,#openqs-list .ot_button .mr_cancel,#openqs-list .ot_button .ot-delete{
+  width: 60px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #482929;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+#openqs-list .ot_button .mr_save{
+   background-color: #ffd733;
+}
+#openqs-list .ot_button .mr_cancel{
+  background-color: #f6ebd6;
+  margin-right: 5px;
+  font-size: 12px;
+  text-decoration: none;
+}
+#openqs-list .ot_button .ot-delete {
+  background: none;
+  display: inline-block;
+  color: #f6ebd6;
+  text-align: center;
+}
+#openqs-list  .mt-edit {
+  background: none;
+  width: 55px;
+  height: 18px;
+  padding: 7px;
+}
+#openqs-list .mt-edit i{
+  width: 18px;
+  height: 18px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-edit.png) no-repeat center;
+  position: absolute;
+  left:45px;
+  top:7px;
+  left:none;
+
+}
+#openqs-list table tr{
+  width: 233px;
+}
+#openqs-list table tr.hover{
+  background: #fafafa;
+
+}
+#openqs-list table tr.hover td{
+  color: #482929;
+}
+
+#openqs-list table tr.ft{
+  border-bottom: 1px solid #e3d2c4;
+   padding: 0;
+}
+#openqs-list table tr.ft td{
+  padding: 0;
+  height: 35px;
+}
+#openqs-list .mt_base{
+  width: 166px;
+  font-size: 14px;
+  background: none;
+  color: #f6ebd6;
+  padding: 10px 0;
+}
+#openqs-list .infopl #mt_titleContent{
+  width: 230px;
+  height: auto;
+  font-size: 12px;
+  background: none;
+  color: #f6ebd6;
+  font-family: "microsoft yahei";
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.ot-empty-img{
+  margin: 0 auto;
+  padding-bottom: 100px;
+  height: 82px;
+  width: 82px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/empty-img.png) no-repeat center;
+}
+/*.infopl .hn {display: none}*/
+#jm_pop_tab.jm_pop_nav_logo{width: 64px !important;}
+.plugin_quickwrite .qw-nav li.current{
+  border-left: 2px solid #90531d;
+}
+.qw-edit span{
+  font-size: 12px;
+}
+
+
+/* home bar*/
+#jm_homebar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99999999;
+}
+#jm_homebar .jm_homebar_contrainer{
+  height: 50px;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 0 4px 0 rgba(74, 73, 74, 0.3);
+}
+#jm_homebar #jm_hbnotlogin{
+  width: 120px;
+}
+#jm_homebar .jm_hblogin{
+  width: 100px;
+  height: 50px;
+  background-color: #ffd733;
+  float: left;
+  line-height: 50px;
+}
+#jm_homebar .jm_hblogin span{
+    padding: 0 0 0 53px;
+    width: 29px;
+    height: 20px;
+    font-size: 14px;
+    color: #482929;
+}
+
+#jm_homebar .jm_hbtrigger{
+    height: 50px;
+    width: 20px;
+    float: right;
+    background-color: #f6ebd6;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    position: relative;
+}
+#jm_homebar .jm_hbcontent{
+  float: left;
+  height: 50px;
+  background-color: #fcf8f0;
+  /*border-bottom:3px solid #ffd733;*/
+}
+#jm_homebar ul.jm_hbul {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#jm_homebar ul.jm_hbul li{
+  /*display: inline-block;*/
+
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 47px;
+  line-height: 47px;
+  border-bottom: 3px solid #ffd733;
+  box-sizing: content-box;
+  transition: width 1s;
+    -moz-transition: width 1s; /* Firefox 4 */
+    -webkit-transition: width 1s; /* Safari 和 Chrome */
+    -o-transition: width 1s; /* Opera */
+}
+#jm_homebar ul.jm_hbul li a{
+  height: 47px;
+  display: inline-block;
+}
+
+#jm_homebar ul.jm_hbul li.current {
+  border-bottom: 3px solid #482929;
+}
+#jm_homebar ul.jm_hbul li.current:first-child{
+  border-bottom: 3px solid #ffd733;
+}
+#jm_homebar ul.jm_hbul li:first-child{
+  width: 125px;
+}
+#jm_homebar ul.jm_hbul li:first-child ul,
+#jm_homebar ul.jm_hbul li:first-child ul li{
+  width: 125px !important;
+}
+#jm_homebar ul.jm_hbul li> ul li{
+    text-align: center;
+    width: 100px !important;
+}
+#jm_homebar ul.jm_hbul li:first-child img{
+  padding: 9px 12px;
+}
+#jm_homebar ul.jm_hbul li span{
+  font-size: 12px;
+  color: #482929;
+  padding-left: 40px;
+}
+#jm_homebar ul.jm_hbul li:hover ul {
+  display: block;
+}
+#jm_homebar ul.jm_hbul li:hover ul li{
+  border: none;
+}
+#jm_homebar ul.jm_hbul li> ul{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: -98px;
+  /*width: 129px;*/
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 3px solid #ffd733;
+  box-shadow: 0 0 4px 0 rgba(74, 73, 74, 0.3);
+  background-color: #ffffff;
+}
+#jm_homebar ul.jm_hbul li> ul li,
+#jm_homebar ul.jm_hbul li> ul li.current{
+  border: none;
+}
+#jm_homebar ul.jm_hbul li> ul li:first-child{
+  border-bottom:1px solid #e5e5e5;
+}
+#jm_homebar ul.jm_hbul li> ul li span{
+  padding-left: 0;
+}
+  #jm_homebar ul.jm_hbul li> ul li.current{
+    border: none;
+  }
+#jm_homebar ul.jm_hbul li> ul li.current:first-child{
+  border-bottom: 1px solid #e5e5e5;
+}
+#jm_homebar ul.jm_hbul li> ul li,
+#jm_homebar ul.jm_hbul li> ul li.current{
+border-bottom: 1px solid #e5e5e5 !important;
+}
+#jm_homebar ul.jm_hbul li> ul li:last-child,
+#jm_homebar ul.jm_hbul li> ul li.current:last-child{
+  border-bottom:none;
+}
+#jm_homebar ul.jm_hbul li:nth-child(3) > ul{
+  top:-195px;
+}
+#jm_homebar ul.jm_hbul li:nth-child(4) > ul,
+#jm_homebar ul.jm_hbul li:nth-child(4) > ul li{
+    width: 160px !important;
+ /* top:-145px;*/
+}
+#jm_homebar ul.jm_hbul li:nth-child(5) > ul{
+    top:-239px;
+}
+#jm_homebar ul.jm_hbul li:nth-child(5) > ul,
+#jm_homebar ul.jm_hbul li:nth-child(5) > ul li{
+    width: 160px !important;
+}
+#jm_homebar ul.jm_hbul li:nth-child(6)> ul{
+    left: -118px;
+    top: -315px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+#jm_homebar ul.jm_hbul li:nth-child(6)> ul li img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    /*box-shadow: 0 0 4px 0 rgba(74, 73, 74, 0.3);*/
+
+}
+#jm_homebar ul.jm_hbul li:nth-child(6)> ul li .img-box{
+    width: 240px;
+    /*-webkit-box-shadow:0 0 3px  0 rgba(74, 73, 74, 0.3);
+    -moz-box-shadow:0 0 3px 0 rgba(74, 73, 74, 0.3);
+    box-shadow:0 0 3px 0 rgba(74, 73, 74, 0.3); */
+}
+
+
+#jm_homebar .jm_pluginicon ,#jm_homebar .jm_baikeicon,#jm_homebar .jm_collecticon,
+#jm_homebar .jm_xiaozhaoriliicon,#jm_homebar .jm_jinnangicon ,
+#jm_homebar .jm_kechengicon{
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+#jm_homebar .jm_resumeicon ,#jm_homebar .jm_listicon,
+#jm_homebar .jm_bearicon ,#jm_homebar .jm_fbicon{
+  position: absolute;
+  top: 16px;
+  left: 25px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+#jm_homebar .jm_xiaozhaoriliicon {
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/rili@2.png) no-repeat center;
+ background-size: 24px 24px;
+}
+#jm_homebar .jm_jinnangicon {
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/jinnang@2.png) no-repeat center;
+ background-size: 24px 24px;
+}
+#jm_homebar .jm_kechengicon {
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/plugin-education@2.png) no-repeat center;
+ background-size: 24px 24px;
+}
+#jm_homebar .jm_pluginicon {
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/wangshen@2.png) no-repeat center;
+ background-size: 24px 24px;
+}
+#jm_homebar .jm_baikeicon {
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/baike@2.png) no-repeat center;
+ background-size: 24px 24px;
+}
+#jm_homebar .jm_collecticon {
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/collect.png) no-repeat center;
+}
+#jm_homebar .jm_resumeicon{
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/resume-small.png) no-repeat center;
+}
+#jm_homebar .jm_listicon{
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/list-small.png) no-repeat center;
+}
+#jm_homebar .jm_bearicon {
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/footer-au.png) no-repeat center;
+}
+#jm_homebar .jm_fbicon{
+ background: url(http://ice2018.com/static/chrome_plugin/images/ot/footer-fb.png) no-repeat center;
+}
+#jm_homebar .arrow-left{
+  position: absolute;
+  top: 16px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/arrows-left.png) no-repeat center;
+}
+#jm_homebar .arrow-right{
+  position: absolute;
+  top: 16px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/arrows-right.png) no-repeat center;
+}
+#jm_hbnotlogin .jm_hblogin a{
+  height: 50px;
+  display: inline-block;
+  width: 100px;
+  position: relative;
+}
+#jm_hbnotlogin .jm_hblogin a i{
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/plugin-icon.png) no-repeat center;
+}
+#jm_notlogin_notice{
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  left: 100px;
+  width: 200px;
+  height: 110px;
+  line-height: 110px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: #ffd733;
+  color: #482929;
+  z-index: 9999999;
+}
+#jm_notlogin_notice .jm_hbclose{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-close.png) no-repeat center;
+}
+
+.hb_hidden{
+  display: none;
+}
+.ot_delete_pop{width: 180px;height: 110px;background-color: #ffd733;text-align: center;padding: 20px;position:absolute;  top:50%; left:50%; margin:-75px 0 0 -110px; z-index:99; }
+.ot_delete_pop p.text{font-size: 14px; color: #482929; padding:0 0 10px 0; font-weight: normal;}
+.ot_delete_pop span.open-title{padding: 0; margin: 0;}
+.ot_delete_pop span {padding: 8px 18px;  margin: 0 14px; }
+.ot_delete_pop .ot_del_cancel{background: #fff; color: #482929}
+.ot_delete_pop .ot_del_ok{background: #482929; color: #fff}
+#jm_qiuck_cover {
+  display: none;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -73px 0 0 -73px;
+  width: 147px;
+  height: 147px;
+  border-radius: 80px;
+  background-color: #ffd733;
+}
+#jm_qiuck_cover  .jm_qc_icon{
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  display: block;
+  width: 47px;
+  height: 47px;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/success-tick.png) no-repeat center;
+}
+#jm_qiuck_cover .jm_qc_content{
+    font-family: "Microsoft YaHei"!important;
+    font-size: 15px;
+    position: absolute;
+    top: 95px;
+    left: 43px;
+}
+.plugin_quickwrite #qw_login ul.qw-nav .empty-flag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 13px solid #79369d;
+    border-left: 13px solid transparent;
+}
+.plugin_quickwrite #resumeEmptyNotice{
+    z-index: 99999;
+    width: 324px;
+    height: 125px;
+    line-height: 32px;
+    left: -334px;
+    top: 50%;
+    margin-top: -65px;
+    font-size: 14px;
+    color: #ffd733;
+    text-align: left;
+    background: #482929;
+    position: absolute;
+    bottom: 100px;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.plugin_quickwrite #resumeEmptyNotice p{
+  line-height: 30px;
+}
+.plugin_quickwrite #resumeEmptyNotice i.jm_renclose{
+  position: absolute;
+  top:10px;
+  right:15px;
+  height: 25px;
+  width: 25px;
+  display: block;
+  cursor: pointer;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-closey.png) no-repeat center;
+}
+.plugin_quickwrite #resumeEmptyNotice p{
+    padding: 15px 40px;
+    font-size: 13px;
+}
+.analyticsuid{
+  height: 1px;
+  width: 1px;
+}
+#icebear_plugin .errorNotice {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    z-index: 99999;
+    width: 324px;
+    height: auto;
+    line-height: 32px;
+    margin-top: -65px;
+    font-size: 14px;
+    color: #ffd733;
+    text-align: left;
+    background: #482929;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#icebear_plugin .errorNotice i.jm_errorclose{
+  position: absolute;
+  top:10px;
+  right:15px;
+  height: 25px;
+  width: 25px;
+  display: block;
+  cursor: pointer;
+  background: url(http://ice2018.com/static/chrome_plugin/images/ot/ot-closey.png) no-repeat center;
+}
+#icebear_plugin .errorNotice p{
+    padding: 15px 40px;
+    font-size: 13px;
+    line-height: 22px;
+}
+#jm_pop_tab #course{display: none !important;}

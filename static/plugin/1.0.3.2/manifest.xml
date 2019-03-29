@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+    <id>com.icebear.plugin</id>
+	<name>Icebearjobhelper2019</name>
+	<show_icon>true</show_icon>
+	<description>Icebear白熊求职助手, 专为企业网申设计，省去繁杂填写，支持多种浏览器， 适配各类网申页面，让offer来得更轻松！新增场景信息栏，在合适的网站推送求职攻略，助你练好内功，斩获offer。
+</description>
+    <version>1.0.3.2</version>
+    <request_api_version>7</request_api_version>
+    <background page="background.html">
+    </background>
+     <content_scripts> 
+       <content_script > 
+        <js>common/kissy-1.2.0-min.js</js>
+        <js>common/kissy-component.js</js>
+        <js>common/md5.js</js>
+        <js>common/jquery.js</js>
+        <js>common/jquery.Jcrop.min.js</js>
+        <js>js/drag.js</js>
+        <js>js/supportsite.js</js>
+        <js>js/34taologin.js</js>
+        <js>js/web-init.js</js>
+        <js>js/cookies.js</js>
+        <!-- <js>jm.js</js> -->
+        <css>extra/animated-notifications.css</css>
+        <css>extra/animate.css</css>
+        <css>extra/jobsminer.css</css>
+        <match>http://*/*</match>
+        <match>https://*/*</match>
+       </content_script> 
+ </content_scripts>
+    <popup page="popup.html" width="240" height="250"/> 
+    <option page="popup.html" width="240" height="20"></option>
+    <author>Icebear白熊求职助手</author>
+	<permissions>
+		<permission>management</permission>
+		<permission>proxy</permission>
+		<permission>idle</permission>
+		<permission>tabs</permission>
+		<permission>cookies</permission>
+		<permission>notifications</permission>
+		<permission>webRequest</permission>
+		<permission>webRequestBlocking</permission>
+		<permission>http://*/*</permission>
+		<permission>https://*/*</permission>
+		<permission>unlimitedStorage</permission>
+	</permissions>
+	<homepage_url page="http://icebear.me">http://icebear.me</homepage_url>
+	
+	<web_accessible_resources>/extra/jobsminer.css</web_accessible_resources>
+	<web_accessible_resources>/extra/popup.css</web_accessible_resources>
+	<web_accessible_resources>popup.html</web_accessible_resources>
+
+	<content_security_policy>script-src 'self' https://www.google-analytics.com; object-src 'self' 'unsafe-eval' https://www.icebear.me/; object-src 'self' 'unsafe-eval' https://www.icebear.me/</content_security_policy>
+</extension>
+
+
